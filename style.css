@@ -20,7 +20,7 @@ html, body {
 }
 
 h1 {
-
+  font-family: "Rock 3D", system-ui;
   font-size: 50px;
   color: #bd4e22;
   text-align: center;
@@ -38,6 +38,15 @@ a:hover {
   text-decoration: underline;
 }
 
+/* container centers everything */
+.recipe-container {
+  display: flex;
+  flex-direction: column; /* stacked vertically */
+  align-items: center;    /* centered horizontally */
+  justify-content: center;
+}
+
+/* recipe boxes */
 .recipe-section {
   background: rgba(255, 255, 255, 0.7);
   margin: 20px;
@@ -45,8 +54,10 @@ a:hover {
   border: 2px solid #e7622d;
   border-radius: 15px;
   max-width: 500px;
+  text-align: left;
 }
 
+/* images */
 .recipe-section img {
   width: 250px;
   aspect-ratio: 1 / 1;
@@ -58,16 +69,10 @@ a:hover {
 h2 {
   color: #e7622d;
   margin-top: 0;
+  text-align: center;
 }
 
 h3 {
   color: #bd4e22;
   margin-bottom: 5px;
-}
-
-.crop img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 15px;
 }
